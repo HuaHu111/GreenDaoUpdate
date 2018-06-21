@@ -37,11 +37,11 @@ public class MainActivity extends AppCompatActivity {
         btn_zeng.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                User sanfeng = new User("张三丰", 88);
-                User guojing = new User("郭静", 25);
-                User ouyang = new User("欧阳锋", 75);
-                User duanyu = new User("段誉", 17);
-                User huangrong = new User("黄蓉", 19);
+                User sanfeng = new User("张无忌", 88,"男");
+                User guojing = new User("华筝", 25,"女");
+                User ouyang = new User("瑛姑", 75,"女");
+                User duanyu = new User("乔峰", 17,"男");
+                User huangrong = new User("黄药师", 19,"男");
                 ArrayList<User> users = new ArrayList<>();
                 users.add(sanfeng);
                 users.add(guojing);
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 List<User> users = instance.queryUser();
                 for (User user:users){
-                    Log.e("user",user.getName()+"    年龄："+user.getAge());
+                    Log.e("user",user.getName()+"    年龄："+user.getAge()+"    性别："+user.getSex());
                 }
             }
         });

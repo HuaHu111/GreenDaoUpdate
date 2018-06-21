@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'org.greenrobot.greendao'
 
 greendao {
-    schemaVersion 1 //数据库版本
+    schemaVersion 2 //数据库版本
     targetGenDir 'src/main/java' //指定生成代码的目录
     daoPackage "com.rgznworld.mygreendao.greendao"//生成代码到具体包下
 }

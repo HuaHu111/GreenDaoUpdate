@@ -15,6 +15,7 @@ public class User {
 
     private String name;
     private int age;
+    private String sex;
 
     public int getAge() {
         return this.age;
@@ -34,19 +35,27 @@ public class User {
     public void setId(Long id) {
         this.id = id;
     }
+    public String getSex() {
+        return this.sex;
+    }
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
 
-    public  User(String name,int age){
+    public  User(String name,int age,String sex){
         this.name=name;
         this.age=age;
+        this.sex=sex;
     }
     @Generated(hash = 586692638)
     public User() {
     }
-    @Generated(hash = 1309193360)
-    public User(Long id, String name, int age) {
+    @Generated(hash = 689493095)
+    public User(Long id, String name, int age, String sex) {
         this.id = id;
         this.name = name;
         this.age = age;
+        this.sex = sex;
     }
 
 
